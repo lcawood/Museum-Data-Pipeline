@@ -38,6 +38,14 @@ Visitors of the museum can rate an exhibition from 0 to 4, with 4 being the high
    
     - From the data collected on the exhibitions in step 2, populates the database with information on each exhibition. Moreover, information about each department and the meaning of each vote rating is added to the database now. This data is added separately to the actual vote data for two reasons: (a) this data is subject change infrequently; (b) separation here makes for better readability.
 
+4. ```pipeline.py```
+   
+    - Connects to the database, and passes the static vote data stored in the combined csv file through the pipeline and thereafter inserts it into the database.
+  
+5. ```kafka_to_db.py```
+   
+    - Connects to the database, and passes the live vote data from the kafka cluster through the pipeline and thereafter inserts it into the database.
+   
 ## Disclaimer
 
 The Kafka cluster not the data stored on s3 are currently publicly available and so it is not possible to run either data source through the pipeline. 
