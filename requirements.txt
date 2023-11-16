@@ -1,0 +1,9 @@
+boto3 
+python-dotenv
+pandas
+pylint
+pytest
+psycopg2
+datetime
+argparse
+confluent_kafka
