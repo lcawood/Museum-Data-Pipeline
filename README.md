@@ -26,7 +26,8 @@ Visitors of the museum can rate an exhibition from 0 to 4, with 4 being the high
   
 ## Usage
 
-```schema.sql```
+1. ```schema.sql```
+    - Run this script using any database engine
 
 ## Disclaimer
 
