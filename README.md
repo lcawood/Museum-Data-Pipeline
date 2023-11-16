@@ -48,4 +48,4 @@ Visitors of the museum can rate an exhibition from 0 to 4, with 4 being the high
    
 ## Disclaimer
 
-The Kafka cluster not the data stored on s3 are currently publicly available and so it is not possible to run either data source through the pipeline. 
+The Kafka cluster nor the data stored on s3 are currently publicly available and so it is not possible to run either data source through the pipeline. 
