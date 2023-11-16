@@ -30,11 +30,14 @@ Visitors of the museum can rate an exhibition from 0 to 4, with 4 being the high
    
     - Run this script in any database engine to create the database tables and establish any relationships between them. Throughout the project, I opted to use PostgreSQL.
 
-1. ```extract.py```
+2. ```extract.py```
    
     - Downloads all files from an s3 bucket and filters through the files to remove any irrelevant files. Files remaining contain data referring to information about the museum exhibitions, or data about votes, emergencies, or assistance requests. These are further combined into two separate CSV files in preparation for initially populating the database and the pipeline respectively.
+
+3. ```populate_db_tables.py```
    
+    - From the data collected on the exhibitions in step 2, populates the database with information on each exhibition. Moreover, information about each department and the meaning of each vote rating is added to the database now. This data is added separately to the actual vote data for two reasons: (a) this data is subject change infrequently; (b) separation here makes for better readability.
 
 ## Disclaimer
 
-The Kafka cluster is not currently publicly available and so it is not possible to run the live Kafka data through the pipeline. 
+The Kafka cluster not the data stored on s3 are currently publicly available and so it is not possible to run either data source through the pipeline. 
