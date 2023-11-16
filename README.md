@@ -28,7 +28,12 @@ Visitors of the museum can rate an exhibition from 0 to 4, with 4 being the high
 
 1. ```schema.sql```
    
-    - Run this script using any database engine
+    - Run this script in any database engine to create the database tables and establish any relationships between them. Throughout the project, I opted to use PostgreSQL.
+
+1. ```extract.py```
+   
+    - Downloads all files from an s3 bucket and filters through the files to remove any irrelevant files. Files remaining contain data referring to information about the museum exhibitions, or data about votes, emergencies, or assistance requests. These are further combined into two separate CSV files in preparation for initially populating the database and the pipeline respectively.
+   
 
 ## Disclaimer
 
